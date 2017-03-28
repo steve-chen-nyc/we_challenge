@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Login from './Login';
+import Navigation from './Navigation';
 import Footer from './Footer';
+
 
 class App extends Component {
   constructor(){
@@ -10,8 +12,14 @@ class App extends Component {
     return (
       <div>
         <Login />
+        <Navigation />
+        <div className="jumbotron jumbotron-fluid">
+          <div className="container">
+            <h1 className="display-3">West Elm</h1>
+          </div>
+        </div>
         {this.props.children}
-        <Footer /> 
+        <Footer />
       </div>
     )
   }
