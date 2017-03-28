@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Login from './Login';
+import Footer from './Footer';
 
 class App extends Component {
   constructor(){
@@ -7,8 +9,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1> Hello World ! </h1>
+        <Login />
         {this.props.children}
+        <Footer /> 
       </div>
     )
   }

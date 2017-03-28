@@ -6,8 +6,7 @@ import Home from './components/Home.js';
 import {
   BrowserRouter as Router,
   Route,
-  Link,
-  IndexRoute
+  Link
 } from 'react-router-dom'
 
 ReactDOM.render((
