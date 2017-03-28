@@ -1,3 +1,5 @@
+li {  list-style: none; }
+
 #loginList {
   display: inline-flex;
   justify-content: flex-end;
@@ -33,7 +35,7 @@
   color: #4a4a4a;
 }
 
-li {  list-style: none; }
+
 
 #mainContainer {
   border-bottom: 3px solid #4a4a4a;
@@ -72,6 +74,11 @@ li {  list-style: none; }
   justify-content: space-between;
 }
 
+.productImage {
+  max-width: 200px;
+  min-width: 200px;
+}
+
 #secondBodyContainer { margin-top: 40px; }
 
 .bodyCopyContainerTwo {
@@ -95,7 +102,5 @@ li {  list-style: none; }
   display: inline-flex;
   justify-content: center;
 }
-
-.footerItem { padding-right: 10px; }
 
 #trademark { text-align: center; }

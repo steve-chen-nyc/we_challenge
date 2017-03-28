@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link }  from 'react-router-dom';
 
 function Navigation(props) {
   return (
       <div>
         <div>
-          <img id="logo" src="../client/assets/west_elm_logo.png"></img>
+          <Link to="/"><img id="logo" src="../assets/west_elm_logo.png"></img></Link>
         </div>
         <ul className="nav nav-tabs">
           <li role="presentation"> <a href="#">Home</a> </li>

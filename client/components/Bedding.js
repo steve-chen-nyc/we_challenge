@@ -6,11 +6,11 @@ function Bedding(props) {
     <div>
      <Content
        headLine= 'Bedding'
-       bodyCopy= "With a casual, heathered effect that's easy to layer, our Belgian Linen Melange Duvet Cover is crafted from fine Belgian flax that's washed for a luxe, lived-in look. Prized for its breathability and softness, linen keeps you cool in the summer and warm in the winter, making it a dreamy choice for the master bedroom."
-       imageOne="../client/assets/bath_1.jpg"
-       imageTwo="../client/assets/bath_2.jpg"
-       imageThree="../client/assets/bath_3.jpg"
-       imageFour="../client/assets/bath_4.jpg"
+       bodyCopy= "Made from textured cotton, our Absorbent Lightweight Towels are designed to dry quicker than regular towels. Make a set more personal with a monogram."
+       imageOne="../assets/bedding_one.jpg"
+       imageTwo="../assets/bedding_two.jpg"
+       imageThree="../assets/bedding_three.jpg"
+       imageFour="../assets/bedding_four.jpg"
      />
     </div>
   )

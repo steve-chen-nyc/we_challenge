@@ -6,11 +6,11 @@ function Rooms(props) {
     <div>
       <Content
         headLine= 'Rooms'
-        bodyCopy= "With a casual, heathered effect that's easy to layer, our Belgian Linen Melange Duvet Cover is crafted from fine Belgian flax that's washed for a luxe, lived-in look. Prized for its breathability and softness, linen keeps you cool in the summer and warm in the winter, making it a dreamy choice for the master bedroom."
-        imageOne="../client/assets/bath_1.jpg"
-        imageTwo="../client/assets/bath_2.jpg"
-        imageThree="../client/assets/bath_3.jpg"
-        imageFour="../client/assets/bath_4.jpg"
+        bodyCopy= "Tuft love. Upholstered in a steel gray linen weave,our Grid-Tufted Tapered Leg Bed puts a retro spin on a classic silhouette. With a vintage-style low profile and walnut-finished cone legs, it sits seamlessly with our mid-century nightstands and dressers."
+        imageOne="../assets/room_one.jpg"
+        imageTwo="../assets/room_two.jpg"
+        imageThree="../assets/room_three.jpg"
+        imageFour="../assets/room_four.jpg"
       />
    </div>
   )

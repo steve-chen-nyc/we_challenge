@@ -5,12 +5,12 @@ function Living(props) {
   return (
     <div>
      <Content
-       headLine= 'Living'
-       bodyCopy= "With a casual, heathered effect that's easy to layer, our Belgian Linen Melange Duvet Cover is crafted from fine Belgian flax that's washed for a luxe, lived-in look. Prized for its breathability and softness, linen keeps you cool in the summer and warm in the winter, making it a dreamy choice for the master bedroom."
-       imageOne="../client/assets/bath_1.jpg"
-       imageTwo="../client/assets/bath_2.jpg"
-       imageThree="../client/assets/bath_3.jpg"
-       imageFour="../client/assets/bath_4.jpg"
+       headLine= "Living"
+       bodyCopy= "With its modern form, extra-deep seat and crisp tailoring, our spacious Andes Sofa has serious presence but feels airy and light thanks to the thin frame and cast metal legs."
+       imageOne="../assets/living_one.jpg"
+       imageTwo="../assets/living_two.jpg"
+       imageThree="../assets/living_three.jpg"
+       imageFour="../assets/living_four.jpg"
      />
     </div>
   )

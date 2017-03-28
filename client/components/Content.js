@@ -10,19 +10,19 @@ function Content(props) {
 
       <div className=" grid imageGallery">
         <div className="cell">
-          <img  src={props.imageOne} />
+          <img className="productImage" src={props.imageOne} />
         </div>
 
         <div className="cell">
-          <img src={props.imageTwo}  />
+          <img className="productImage"  src={props.imageTwo}  />
         </div>
 
         <div className="cell">
-          <img  src={props.imageThree}  />
+          <img className="productImage"  src={props.imageThree}  />
         </div>
 
         <div className="cell">
-          <img src={props.imageFour}  />
+          <img className="productImage"  src={props.imageFour}  />
         </div>
       </div>
 
