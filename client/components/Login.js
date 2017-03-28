@@ -2,10 +2,11 @@ import React from 'react';
 
 function Login(props) {
   return(
-      <ul>
-        <li> account </li>
-        <li> logout </li> 
-      </ul>
+        <ul id="loginList">
+          <li className="loginItem"> account </li>
+          <li id="spacer"> | </li>
+          <li className="loginItem"> logout </li>
+        </ul>
   )
 }
 

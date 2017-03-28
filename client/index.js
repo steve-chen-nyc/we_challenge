@@ -21,7 +21,7 @@ ReactDOM.render((
   <Router>
     <App>
       <Main>
-        <Route path="/bedding" component={Bedding}/>
+        <Route exact path="/" component={Bedding}/>
         <Route path="/bath" component={Bath}/>
         <Route path="/rooms" component={Rooms}/>
         <Route path="/kitchen" component={Kitchen}/>

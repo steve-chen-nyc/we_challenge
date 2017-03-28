@@ -15,7 +15,7 @@ class App extends Component {
         <Navigation />
         <div className="jumbotron jumbotron-fluid">
           <div className="container">
-            <h1 className="display-3">West Elm</h1>
+            <h1 className="display-3">Mark Up Challenge</h1>
           </div>
         </div>
         {this.props.children}

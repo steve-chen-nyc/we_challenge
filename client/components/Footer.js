@@ -3,15 +3,15 @@ import React from 'react';
 function Footer(props) {
   return (
     <div id="footer">
-      <ul>
-        <li> home |</li>
-        <li> contact |</li>
-        <li> about us |</li>
-        <li> site map |</li>
-        <li> stores |</li>
-        <li> feedback |</li>
+      <ul id="footerList">
+        <li className="footerItem"> home |</li>
+        <li className="footerItem"> contact |</li>
+        <li className="footerItem"> about us |</li>
+        <li className="footerItem"> site map |</li>
+        <li className="footerItem"> stores |</li>
+        <li className="footerItem"> feedback </li>
       </ul>
-      <p> copyright 2017 Williams Sonoma Inc </p>
+      <p id="trademark"> &copy; copyright 2017 Williams Sonoma Inc </p>
     </div>
   )
 }

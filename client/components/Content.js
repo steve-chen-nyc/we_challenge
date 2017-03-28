@@ -8,21 +8,21 @@ function Content(props) {
         <p> {props.bodyCopy }</p>
       </div>
 
-      <div className="row imageGallery">
-        <div className="col-md-2 col-md-offset-1">
-          <img className="img-responsive" src={props.imageOne} />
+      <div className=" grid imageGallery">
+        <div className="cell">
+          <img  src={props.imageOne} />
         </div>
 
-        <div className="col-md-2">
-          <img className="img-responsive" src={props.imageTwo}  />
+        <div className="cell">
+          <img src={props.imageTwo}  />
         </div>
 
-        <div className="col-md-2">
-          <img className="img-responsive" src={props.imageThree}  />
+        <div className="cell">
+          <img  src={props.imageThree}  />
         </div>
 
-        <div className="col-md-2">
-          <img className="img-responsive" src={props.imageFour}  />
+        <div className="cell">
+          <img src={props.imageFour}  />
         </div>
       </div>
 
