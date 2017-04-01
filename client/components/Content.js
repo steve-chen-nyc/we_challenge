@@ -1,55 +1,47 @@
-import React from 'React';
+import React, { Component } from 'React';
+import ContentItem from './ContentItem'
+import contentData from '../data/contentData';
 
-function Content(props) {
-  return(
-    <div className="contentContainer">
-      <h1> {props.headLine} </h1>
-      <div className="bodyCopyContainer">
-        <p> {props.bodyCopy }</p>
-      </div>
-
-      <div className=" grid imageGallery">
-        <div className="cell">
-          <img className="productImage" src={props.imageOne} />
-        </div>
-
-        <div className="cell">
-          <img className="productImage"  src={props.imageTwo}  />
-        </div>
-
-        <div className="cell">
-          <img className="productImage"  src={props.imageThree}  />
-        </div>
-
-        <div className="cell">
-          <img className="productImage"  src={props.imageFour}  />
-        </div>
-      </div>
-
-      <div id="secondBodyContainer">
-        <div className="bodyCopyContainerTwo">
-          <p className="subCopy"> Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-           in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-           officia deserunt mollit anim id est laborum. </p>
-        </div>
-
-        <div className="bodyCopyContainerThree">
-          <p className="subCopy"> Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-           in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-           officia deserunt mollit anim id est laborum. </p>
-        </div>
-      </div>
-
-    </div>
-  )
+class ContentContainer extends Component {
+  constructor(props) {
+    super(props)
+    this.state={
+      data: [],
+      contentId: "Bedding"
+    }
+  }
+  componentDidMount() {
+    this.props.match.params.contentId === undefined
+    ? this.getContentData()
+    : this.setState({
+      contentId: this.props.match.params.contentId
+    }, () =>  this.getContentData());
+  }
+  componentWillReceiveProps(newProps){
+    this.setState({
+      contentId: newProps.match.params.contentId
+    }, () => this.getContentData());
+  }
+  getContentData() {
+    var categoryObject = contentData.filter((obj) => {
+      return obj.category === this.state.contentId
+    });
+    this.setState({
+      data: categoryObject[0]
+    })
+  }
+  render(){
+    return (
+      <ContentItem
+        category={this.state.data.category}
+        copy={this.state.data.copy}
+        imageOne={this.state.data.imageOne}
+        imageTwo={this.state.data.imageTwo}
+        imageThree={this.state.data.imageThree}
+        imageFour={this.state.data.imageFour}
+      />
+    )
+  }
 }
 
-export default Content;
+export default ContentContainer;
