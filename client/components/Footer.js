@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Footer(props) {
+function Footer() {
   return (
     <div id="footer">
       <ul id="footerList">
