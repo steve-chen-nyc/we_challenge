@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
 } from 'react-router-dom';
 
 import App from './components/App';
 import Main from './components/Main';
-import ContentContainer from './components/Content'
+import ContentContainer from './containers/ContentContainer'
 
 ReactDOM.render((
   <Router>
     <App>
       <Main>
-        <Route exact path="/:contentId?" component={ContentContainer}/>
+        <Route path="/:contentId?" component={ContentContainer}/>
       </Main>
     </App>
   </Router>

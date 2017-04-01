@@ -1,5 +1,7 @@
 li {  list-style: none; }
 
+li .active { color: green; }
+
 #loginList {
   display: inline-flex;
   justify-content: flex-end;
@@ -7,7 +9,7 @@ li {  list-style: none; }
   padding-top: 20px;
 }
 
-#spacer{ padding: 0 10px; }
+.spacer{ padding: 0 10px; }
 
 .nav {
   display: flex;
@@ -31,11 +33,7 @@ li {  list-style: none; }
   background-color: white;
 }
 
-.container {
-  color: #4a4a4a;
-}
-
-
+.container {  color: #4a4a4a; }
 
 #mainContainer {
   border-bottom: 3px solid #4a4a4a;
@@ -51,11 +49,9 @@ li {  list-style: none; }
   top: -30px;
 }
 
-#categoryList { padding-left: 15px; }
+#categoryList, #pageList { padding-left: 15px; }
 
-#categoryHeadline {
-  margin-top: 55px;
-}
+#categoryHeadline, #pageHeadline { margin-top: 55px; }
 
 .contentContainer {
   width: 80%;
@@ -63,9 +59,7 @@ li {  list-style: none; }
   margin-right: 25px;
 }
 
-.bodyCopyContainer {
-  padding-top: 20px;
-}
+.bodyCopyContainer { padding-top: 20px; }
 
 .imageGallery {
   padding-top: 20px;

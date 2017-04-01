@@ -1,17 +1,17 @@
 import React, { Component } from 'React';
-import ContentItem from './ContentItem'
+import ContentItem from '../components/ContentItem'
 import contentData from '../data/contentData';
 
 class ContentContainer extends Component {
   constructor(props) {
     super(props)
-    this.state={
+    this.state= {
       data: [],
-      contentId: "Bedding"
+      contentId: "bedding"
     }
   }
   componentDidMount() {
-    this.props.match.params.contentId === undefined
+    this.props.match.params.contentId === undefined // bedding default data
     ? this.getContentData()
     : this.setState({
       contentId: this.props.match.params.contentId
@@ -24,7 +24,7 @@ class ContentContainer extends Component {
   }
   getContentData() {
     var categoryObject = contentData.filter((obj) => {
-      return obj.category === this.state.contentId
+      return obj.category.toLowerCase() === this.state.contentId.toLowerCase();
     });
     this.setState({
       data: categoryObject[0]

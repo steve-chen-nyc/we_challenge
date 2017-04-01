@@ -5,15 +5,15 @@ function Footer(props) {
     <div id="footer">
       <ul id="footerList">
         <li className="footerItem">home</li>
-        <li id="spacer"> | </li>
+        <li className="spacer"> | </li>
         <li className="footerItem">contact</li>
-        <li id="spacer"> | </li>
+        <li className="spacer"> | </li>
         <li className="footerItem">about us</li>
-        <li id="spacer"> | </li>
+        <li className="spacer"> | </li>
         <li className="footerItem">site map</li>
-        <li id="spacer"> | </li>
+        <li className="spacer"> | </li>
         <li className="footerItem">stores</li>
-        <li id="spacer"> | </li>
+        <li className="spacer"> | </li>
         <li className="footerItem">feedback</li>
       </ul>
       <p id="trademark"> &copy; copyright 2017 Williams Sonoma Inc </p>
